@@ -1,0 +1,40 @@
+
+/* MainSkills */
+.MainSkills{
+  display: grid;
+  text-align: left;
+  margin-top: 10px;
+  row-gap: 14px;
+  overflow: hidden;
+  padding: 5px 0px 10px 0px;
+}
+.MainSkills .MainSkills-span1{
+  display: grid;
+  row-gap: 4px;
+  color: rgb(100, 99, 99);
+  font-size: 16px;
+  font-weight: 500;
+  filter: contrast(20px);
+  transition: all 1s;
+  animation: trans 1s forwards;
+}
+.MainSkills .MainSkills-span1 .MainSkills-span-p2{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(187, 0, 69);
+}
+.MainSkills-button .btn{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 2px 5px gray;
+}
+.MainSkills-button .btn:hover{
+  padding: 10px 19px;
+  box-shadow: 4px 4px 5px gray;
+}
+.MainSkills-button .btn a{
+  color: black;
+  font-size: 15px;
+  font-weight: 640;
+}

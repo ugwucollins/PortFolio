@@ -1,0 +1,157 @@
+
+.HireMe{
+  display: grid;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  color: var(--contact);
+  background-color: var(--Primary-colors);
+  animation: dropDown 7s alternate-reverse 1 forwards;
+  margin-top: -730px;
+  z-index: 6;
+}
+@keyframes dropDown {
+  0%{
+    transform: translateY(0px);
+  }  
+  30%{
+    clip-path: circle(20%);
+  } 
+  50%{
+    clip-path: circle(50%);
+  } 
+  100%{
+    clip-path: circle(80%);
+    transition: all 2s ease-in-out;
+    transform: translateY(-780px);
+  }
+}
+
+
+.email-form{
+  display: block;
+  position: relative;
+  justify-content: center;
+  width: 460px;
+  background-color:  var(--Header-background-color);
+  margin: 10px 0px 0px 0px;
+  padding:40px 0px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -1px -1px 10px 8px rgba(0, 0, 0, 0.741);
+}
+.dark-mode .email-form{
+  display: block;
+  position: relative;
+  justify-content: center;
+  width: 460px;
+  background-color:  var(--Header-background-color);
+  margin: 10px 0px 0px 0px;
+  padding:40px 0px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -1px -1px 10px 4px gray;
+}
+.email-form .clicked{
+  display: flex;
+  position: relative;
+  margin-left: 50px;
+}
+
+.label{
+  display: block;
+  position: absolute;
+  margin:10.4px 0px 0px 10px;
+  white-space: nowrap;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  transition: all 0.7s ease-in-out;
+ }
+ .email-form .input{
+  padding: 10px 10px;
+  font-size: 16px;
+  width: 350px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 8px 9px 10px black;
+  background-color: white;
+ }
+.email-form .close-icon{
+  top: 6px;
+  right: 10px;
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+ }
+ .email-form .close-icon:hover{
+  color: red;
+  font-size: 33px;
+  transition: all 0.3s ease-in-out;
+ }
+.clicked .input:valid ~ .label,
+.clicked .input:focus ~ .label{
+  color:var(--input-color2);
+  transform: translateX(-3px) translateY(-21px);
+  background: var(--input-color);
+  transition: all 0.6s ease-in-out;
+  padding: 0 10px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+}
+.text{
+  margin-top: 20px;
+}
+
+.button{
+  margin: 0px 0px 0px 0px;
+}
+ .button .form-button{
+  padding: 13px 20px;
+  width: 250px;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px gray;
+ }
+.button .form-button:hover{
+  color: white;
+  background-color: black;
+  filter: contrast(10px);
+  padding: 13px 5px;
+  transition: all 0.7s ease-in-out;
+ }
+
+ @media (max-width:1200px) {
+  .HireMe{
+    display: grid;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: var(--contact);
+    background-color: var(--Primary-colors);
+    animation: dropDown 7s alternate-reverse 1 forwards;
+    margin-top: -950px;
+    z-index: 6;
+  }
+  @keyframes dropDown {
+    0%{
+      transform: translateY(0px);
+    }  
+    30%{
+      clip-path: circle(20%);
+    } 
+    50%{
+      clip-path: circle(50%);
+    } 
+    100%{
+      clip-path: circle(80%);
+      transition: all 2s ease-in-out;
+      transform: translateY(-750px);
+    }
+  }
+ }
