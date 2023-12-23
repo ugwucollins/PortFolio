@@ -39,16 +39,17 @@ function App() {
     },
   ];
  
-  const form = useRef();
-  
+  const form = useRef('');
+
+
   const sendEmail = (e:any) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_gjs48dc",
-        "template_0130fgk",
+        'service_gjs48dc',
+        'template_0130fgk',
         form.current,
-        "onBgeaCnBkO6NiHur"
+        'onBgeaCnBkO6NiHur'
       )
       .then(
         (result) => {
