@@ -41,7 +41,7 @@ function App() {
  
   const form = useRef();
   
-  const sendEmail = (form:any,e:any) => {
+  const sendEmail = (e:any) => {
     e.preventDefault();
     emailjs
       .sendForm(
