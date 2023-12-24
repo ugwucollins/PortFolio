@@ -673,6 +673,16 @@
     border-radius: 50%;
     overflow: hidden;
    }
+   .type .writing::after{
+    content: '';
+    position: absolute;
+    width:calc(100% - 11px);
+    top: 5px;
+    height: 85%;
+    right: 100px;
+    background:var(--Primary-color);
+    animation: cursor .9s infinite, typing 21s steps(14) infinite;
+  }
    /* .About{
     display: grid;
     padding: 50px 0px 0px 70px;

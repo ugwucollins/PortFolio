@@ -331,5 +331,24 @@
     justify-content: space-between;
     column-gap: 0px;
   }
+  .css .css-all,.all .css-all{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 290px));
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 430px;
+    column-gap: 10px;
+    justify-content: center;
+    padding: 10px 8px 3px 10px;
+    height: auto;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 5px;
+    margin-bottom: 15px;
+    background: linear-gradient( to right,transparent,white);
+    animation: translates 3s linear forwards;
+  }
 }
 
