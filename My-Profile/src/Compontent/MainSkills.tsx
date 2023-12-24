@@ -33,7 +33,7 @@ const MainSkills = () => {
 
         <div className="MainSkills-button">
           <button className="btn">
-            <a href="COLLINS CV.docx" download="COLLINS CV.docx" className="a">
+            <a  href="Collins CV.pdf" download="Collins CV.pdf" className="a">
               Download Cv  <i className="bx bx-vertical-bottom"></i>
             </a>
           </button>

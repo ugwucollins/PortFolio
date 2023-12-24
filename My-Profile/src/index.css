@@ -138,6 +138,15 @@ nav ul .li-header .a-header:hover{
   color: var(--Header-color);
   /* box-shadow: 0px 0px 10px 10px var(--Header-color); */
 }
+.active{
+  color: var(--Header-color);
+  font-size: 16px;
+  font-weight: 800;
+  border-bottom: 2px solid var(--Header-color);
+  padding: 0px 0px 17px 0px;
+  animation: dropDown 1.5s linear forwards;
+}
+
 nav .ul-div .close-icon{
   display: none;
 }
@@ -148,11 +157,6 @@ a{
 .dark{
   display: flex;
   gap: 10px;
-}
-.active{
-  background-color: var(--Header-color);
-  border-bottom: 5px solid green;
-  transform: all 2s;
 }
 
 /* contain section */
@@ -196,22 +200,6 @@ a{
     display: none;
     left: -100%;
   }
-  /* nav .close-icon:hover ~ ul{
-    display: block;
-    position: fixed;
-    margin-top: 40px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    line-height: 60px;
-    transition: all 2.5s;
-    font-size: 16px;
-    font-weight: 700;
-    width: 100%;
-    left: 0px;
-    color: black;
-    background-color: white;
-  } */
 
   nav .ul-header{
     position: fixed;
@@ -244,6 +232,14 @@ a{
     font-weight: 700;
     transition: all 0.5s ease-in-out;
     color: var(--Primary-color);
+  }
+  .active{
+    color: var(--Header-color);
+    font-size: 16px;
+    font-weight: 800;
+    border-bottom: 2px solid var(--Header-color);
+    padding: 0px 3px 2px 3px;
+    animation: dropDown 1.5s linear forwards;
   }
 
   .HireMe{

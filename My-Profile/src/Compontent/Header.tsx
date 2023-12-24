@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 const Header = ({ menus }: any) => {
   const [header, setHeader] = useState(false);
   const [removeheader, setremoveheader] = useState(true);
+  const [selectIndex, setselectIndex] = useState(0);
 
   const open = () => {
     setremoveheader(false);
@@ -28,19 +29,21 @@ const Header = ({ menus }: any) => {
             }
           ></span>
           <ul className={header ? "ul-header" : "nav .close-icon ~.ul-header"}>
-            {menus.map((menu: any) => (
+            {menus.map((menu:any,Index:any) => (
               <li key={menu} className="li-header">
                 <Link
                   onClick={() => {
                     setHeader(false);
                     setremoveheader(true);
+                    setselectIndex(Index)
                   }}
                   to={menu.title}
                   key={menu.id}
                   offset={-50}
                   duration={1200}
                   smooth={true}
-                  className="a-header"
+                  // className="a-header"
+                  className={selectIndex === Index ?"active":"a-header"}
                 >
                   {menu.title}
                 </Link>

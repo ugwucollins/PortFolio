@@ -112,7 +112,7 @@ const About = () => {
 
           <div className="button-cv">
             <button className="btn">
-              <a href="COLLINS CV.docx" download="COLLINS CV.docx" className="a">
+              <a href="Collins CV.pdf" download="Collins CV.pdf" className="a">
                 Download Cv
               </a>
             </button>
