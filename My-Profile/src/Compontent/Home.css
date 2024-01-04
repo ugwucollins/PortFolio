@@ -72,10 +72,7 @@
     content: 'I am a Graphic Designer';
   }
   0%,80%{
-    content: "I also work in Vue.js";
-  }
-  0%,95%{
-    content: "Welcome Back collins";
+    content: "Welcome To My Profile";
   }
 }
 @keyframes typing {

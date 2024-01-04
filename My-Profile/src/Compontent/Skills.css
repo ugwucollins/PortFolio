@@ -208,7 +208,7 @@
   border: none;
   border-radius: 10px;
   background: linear-gradient(red,purple);
-  animation: line4 3s linear forwards;
+  animation: lineall 3s linear forwards;
 }
 .dark-mode .lines4::before{
   position: absolute;
@@ -219,7 +219,7 @@
   border: none;
   border-radius: 10px;
   background: deepskyblue;
-  animation: line4 3s linear forwards;
+  animation: lineall 3s linear forwards;
 }
 
 
@@ -364,7 +364,7 @@
    height: 100%;
    border-radius: 10px;
    background: conic-gradient(from 90deg,rgba(255, 0, 0, 0.895),rgba(128, 0, 128, 0.906));
-   animation: line2 linear 3s forwards;
+   animation: line0 linear 3s forwards;
  }
  .dark-mode .lines-circle2::before{
    position: absolute;
@@ -375,7 +375,7 @@
    height: 100%;
    border-radius: 10px;
    background: conic-gradient(from 90deg, transparent,deepskyblue 1%);
-   animation: line2 3s linear forwards;
+   animation: line0 3s linear forwards;
   }
  .lines-circle2::after{
    position: absolute;
@@ -393,6 +393,14 @@
    border-radius: 50%;
  }
  @keyframes line2{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes line0{
   0%{
     width: 0%;
   }
@@ -454,13 +462,13 @@
     width: 0%;
   }
   100%{
-    width: 60%;
+    width: 72%;
   }
 }
 
 
 
-/* line 3 */
+/* line 4 */
 .lines-circle4{
   position: relative;
   width: 100px;
@@ -508,6 +516,15 @@
    border: none;
    border-radius: 50%;
  }
+ 
+ @keyframes lineall{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
  @keyframes line4{
   0%{
     width: 0%;
@@ -516,6 +533,65 @@
     width: 50%;
   }
 }
+/* line 5 */
+.lines-circle6{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),0px -1px 1px rgba(0, 0, 0, 0.523);
+  background-color: var(--circle-before-background-color);
+ }
+ .lines-circle6::before{
+   position: absolute;
+   content: "";
+   top: 0px;
+   left: 0px;
+   width: 0%;
+   height: 100%;
+   border-radius: 10px;
+   background: conic-gradient(from 90deg,rgba(255, 0, 0, 0.895),rgba(128, 0, 128, 0.906));
+   animation: line6 linear 3s forwards;
+ }
+ .dark-mode .lines-circle6::before{
+   position: absolute;
+   content: "";
+   top: 0px;
+   left: 0px;
+   width: 0%;
+   height: 100%;
+   border-radius: 10px;
+   background: conic-gradient(from 90deg, transparent,deepskyblue 1%);
+   animation: line6 3s linear forwards;
+  }
+ .lines-circle6::after{
+   position: absolute;
+   content: "";
+   top: 10px;
+   left: 10.5px;
+   width: 80%;
+   height: 80%;
+   border: none;
+   border-radius: 10px;
+   background-color: var(--circle-background-color);
+   /* background-color: #2b1b17fd;
+   background-color: rgba(38, 35, 34, 0.549); */
+   border: none;
+   border-radius: 50%;
+ }
+ @keyframes line6{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+
+
+
    /* For smaller Devices */
  @media (max-width:1200px) {
   .Skills-box-circle{
