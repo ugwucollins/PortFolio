@@ -9,6 +9,7 @@ const Home = ({ Open }: any) => {
           <h1 className="home-h1">Hi I'm Tony Collins</h1>
           <h2 className="type">
             <div className="writing"></div>
+            
             {/* <Typewriter
               onInit={(typewriter) => {
                 typewriter
