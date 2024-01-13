@@ -82,7 +82,7 @@ const Contact = ({sendEmail, form }: any) => {
           <div className="contact-all">
             <div className="image-words">
               <h4 className="h4">Get In Touch</h4>
-              <h1 className="h1">Have a Project On Your</h1>
+              <h1 className="h1">Have a Project On Your Mind</h1>
               <button className="hover-btn">
                 <p>Contact Me</p>
                 </button>
