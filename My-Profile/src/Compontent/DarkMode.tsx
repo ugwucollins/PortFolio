@@ -1,25 +1,38 @@
 import { useState } from "react";
 import ReactSwitch from "react-switch";
 
+// const loacl = (localStorage.getItem("Mode"));
+// const modeall = JSON.parse(loacl);
+
+
 const DarkMode = () => {
-  const [dark, setdark] = useState("light");
-  const [mode, setMode] = useState([
-    localStorage.setItem("modes", JSON.stringify(dark)),
-  ]);
+  const [dark, setdark] = useState('light');
+  const [dark1, setdark1] = useState(dark);
+
+  
+  const save = (open:any) => {
+    setdark(open);
+    localStorage.setItem('Mode',JSON.stringify(open));
+  }
 
   const toggleChange = () => {
     document.body.classList.toggle("dark-mode");
-    //  const lock = localStorage.getItem("modes")
+    dark1
     if (document.body.classList.contains("dark-mode")) {
-      setdark("dark");
+      save('dark');
+      // setdark1(modeall);
     } else {
-      setdark("light");
+      save('light');
+      // setdark1(modeall);
     }
   };
+  
+
+
 
   return (
     <div className="dark">
-      <ReactSwitch checked={dark == "light"} onChange={toggleChange} />
+      <ReactSwitch checked={dark === "dark"} onChange={toggleChange} />
       <h4>{dark} Mode</h4>
     </div>
   );
