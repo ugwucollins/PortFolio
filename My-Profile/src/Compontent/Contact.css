@@ -1,302 +1,395 @@
-
-.Contact{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--about-background);
+.Contact {
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--about-background);
 }
 
 .Contact .Contact-work {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,500px));
-    justify-content: space-between;
-    text-align: center;
-    row-gap: 30px;
-    margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
+  justify-content: space-between;
+  text-align: center;
+  row-gap: 30px;
+  margin-top: 15px;
 }
-.Contact .Contact-work h1{
-    margin-top: 10px;
-}
-
-.Contact .Contact-work .email-form{
-    width: 800px;
-   margin: 0px 0px 0px 20px;
-}
-.Contact .Contact-work .email-form .input{
-   width: 90%;
+.Contact .Contact-work h1 {
+  margin-top: 10px;
 }
 
-.Contact .contact-image{
+.Contact .Contact-work .email-form {
+  width: 800px;
+  margin: 0px 0px 0px 20px;
+}
+.Contact .Contact-work .email-form .input {
+  width: 90%;
+}
+
+.Contact .contact-image {
   position: relative;
   border: none;
   margin: 0px 0px 0px -110px;
   padding: 10px 5px 0px 2px;
   overflow: hidden;
 }
-.Contact .contact-image .contact-care{
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
+.Contact .contact-image .contact-care {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.Contact .contact-image .image{
+.Contact .contact-image .image {
   width: 290px;
   height: 365px;
 }
-.Contact .contact-image .contact-all{
+.Contact .contact-image .contact-all {
+  position: relative;
+  height: 85%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: space-between;
+  text-align: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1px 0px 0px 0px;
+}
+.Contact .contact-image .contact-all::before {
+  position: absolute;
+  content: "";
+  top: 100px;
+  left: 5px;
+  background-color: var(--Header-background-color);
+  width: 98%;
+  height: 60%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -1px 1px 7px 2px gray;
+}
+
+/* image-words */
+.contact-all .image-words {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 150px;
+  margin-left: 10px;
+}
+.dark-mode .image-words .hover-btn {
+  position: relative;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 130px;
+  height: 44px;
+  border-radius: 7px;
+  border: none;
+  color: deepskyblue;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: whitesmoke;
+}
+
+.image-words .hover-btn {
+  position: relative;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 130px;
+  height: 45px;
+  border-radius: 7px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--h1-color);
+  background-color: wheat;
+  overflow: hidden;
+}
+.image-words .hover-btn p {
+  position: absolute;
+  white-space: nowrap;
+  top: 0px;
+  text-emphasis: none;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  padding: 10px 0px;
+}
+.image-words .hover-btn p:hover {
+  position: absolute;
+  animation: colors 1s linear forwards;
+}
+@keyframes colors {
+  0% {
+    color: rgb(35, 30, 30);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.image-words .hover-btn:hover::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: linear-gradient(
+    #f75d59,
+    #f75e597c,
+    rgba(128, 0, 128, 0.326),
+    purple
+  );
+  background-color: purple;
+  clip-path: circle(0%);
+  animation: circles 2s linear forwards;
+  border-radius: 5px;
+}
+.dark-mode .image-words .hover-btn:hover::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: deepskyblue;
+  clip-path: circle(0%);
+  animation: circles 2s linear forwards;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1450px) {
+  .Contact .contact-image {
     position: relative;
-    height: 55%;
+    border: none;
+    margin: 20px 0px 0px -10px;
+    padding: 10px 5px 0px 2px;
+    overflow: hidden;
+  }
+  .Contact .contact-image .contact-all {
+    position: relative;
+    height: 60%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,300px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
     justify-content: space-between;
     text-align: center;
     justify-content: space-between;
     overflow: hidden;
     padding: 1px 0px 0px 0px;
-}
-.Contact .contact-image .contact-all::before{
+  }
+  .Contact .contact-image .contact-all::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 100px;
     left: 5px;
-    background-color:  var(--Header-background-color);
+    background-color: var(--Header-background-color);
+    width: 98%;
+    height: 72.5%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -1px 1px 7px 2px gray;
+  }
+  .Contact .contact-image .image {
+    width: 290px;
+    height: 379px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .Contact .Contact-work .Contact-form {
+    display: flex;
+    justify-content: center;
+  }
+  .Contact .Contact-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1000px));
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .Contact .contact-image .image {
+    width: 290px;
+    height: 397px;
+    margin-top: -7px;
+    margin-left: -15px;
+  }
+  .Contact .contact-image .contact-all {
+    height: 100%;
+  }
+  .Contact .contact-image {
+    position: relative;
+    border: none;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 1px 11px 10px;
+    overflow: hidden;
+    min-height: 58vh;
+    background-color: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* .Contact .Contact-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 500px));
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+  } */
+  .Contact .Contact-work .email-form {
+    width: 500px;
+    margin: 0px 0px 0px 20px;
+  }
+  /* 
+  .Contact .contact-image .contact-all {
+    position: relative;
+    height: 55%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    justify-content: space-between;
+    text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0px 0px 0px 0px;
+  }
+  .Contact .contact-image .image {
+    width: 255px;
+    height: 370px;
+  } */
+  .image-words .hover-btn {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Contact .contact-image .image {
+    width: 250px;
+    height: 397px;
+    margin-left: 2px;
+  }
+  .Contact .Contact-work .email-form {
+    width: 400px;
+    margin: 0px 0px 0px 20px;
+  }
+  .Contact .contact-image .contact-all {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 230px));
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .Contact .contact-image .image {
+    width: 200px;
+    height: 403px;
+  }
+
+  .Contact .contact-image {
+    position: relative;
+    border: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 1px 0px;
+    overflow: hidden;
+    min-height: 58vh;
+    width: 380px;
+    margin-left: 50px;
+  }
+
+  .Contact .contact-image .contact-all::before {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 0px;
+    background-color: var(--Header-background-color);
+    width: 100%;
+    height: 72%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -1px 1px 7px 2px gray;
+  }
+  .Contact .contact-image .contact-all {
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 180px));
+    justify-content: space-between;
+    text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    padding: 1px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .Contact .Contact-work .email-form {
+    width: 320px;
+    margin: 0px 0px 0px 0px;
+  }
+  .Contact .Contact-work .email-form .input {
+    width: 90%;
+  }
+  .Contact .contact-image .contact-all {
+    position: relative;
+    height: 55%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 190px));
+    justify-content: space-between;
+    text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0px 0px 0px 0px;
+  }
+  .Contact .contact-image .image {
+    width: 200px;
+    height: 382px;
+  }
+  .image-words .hover-btn {
+    margin-top: 0px;
+  }
+  .Contact .contact-image {
+    position: relative;
+    border: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 1px 0px;
+    overflow: hidden;
+    min-height: 58vh;
+    width: 380px;
+    margin-left: 1px;
+  }
+  .Contact .contact-image .contact-all::before {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 5px;
+    background-color: var(--Header-background-color);
     width: 98%;
     height: 72%;
     border: none;
     border-radius: 10px;
-    box-shadow: -1px 1px 7px 2px gray; 
+    box-shadow: -1px 1px 7px 2px gray;
+  }
 }
 
-
-/* image-words */
-.contact-all .image-words{
+@media screen and (max-width: 290px) {
+  .Contact .contact-image .contact-all {
     position: relative;
+    height: 910px;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    margin-top: 150px;
-    margin-left: 10px;
-}
-.dark-mode .image-words .hover-btn{
-    position: relative;
-    padding: 10px 20px;
-    margin-top: 20px;
-    width: 130px;
-    height: 44px;
-    border-radius: 7px;
-    border: none;
-    color: deepskyblue;
-    font-size: 16px;
-    font-weight: 700;
-    background-color: whitesmoke;
-}
-
-
-.image-words .hover-btn{
-    position: relative;
-    padding: 10px 20px;
-    margin-top: 20px;
-    width: 130px;
-    height: 45px;
-    border-radius: 7px;
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    color:var(--h1-color);
-    background-color: wheat;
-    overflow: hidden;
-}
-.image-words .hover-btn p{
-    position: absolute;
-    white-space: nowrap;
-    top: 0px;
-    text-emphasis: none;
     text-align: center;
-    height: 100%;
-    width: 100%;
-    left: 0px;
-    padding: 10px 0px;
-}
-.image-words .hover-btn p:hover{
-    position: absolute;
-    animation: colors 1s linear forwards;
-}
-@keyframes colors{
-   0%{
-    color: rgb(35, 30, 30);
-   }
-   100%{
-    color: white;
-   }
-}
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1px 0px 0px 0px;
+  }
 
-
-.image-words .hover-btn:hover::before{
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background:linear-gradient(#f75d59,#f75e597c,rgba(128, 0, 128, 0.326),purple);
-    background-color: purple;
-    clip-path: circle(0%);
-    animation: circles 2s linear forwards;
-    border-radius: 5px;
-}
-.dark-mode .image-words .hover-btn:hover::before{
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background: deepskyblue;
-    clip-path: circle(0%);
-    animation: circles 2s linear forwards;
-    border-radius: 5px;
-}
-
-@media screen and (max-width:1450px) {
-    .Contact .contact-image{
-        position: relative;
-        border: none;
-        margin: 0px 0px 0px -10px;
-        padding: 10px 5px 0px 2px;
-        overflow: hidden;
-    }
-    .Contact .contact-image .contact-all{
-        position: relative;
-        height: 55%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,250px));
-        justify-content: space-between;
-        text-align: center;
-        justify-content: space-between;
-        overflow: hidden;
-        padding: 1px 0px 0px 0px;
-    }
-}
-
-@media screen and (max-width:1350px) {
-    .Contact .Contact-work .Contact-form{
-        display: flex;
-        justify-content: center;
-    }
-    .Contact .Contact-work {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(500px,700px));
-        justify-content: center;
-        text-align: center;
-        margin-top: 15px;
-    }
-    .Contact .contact-image{
-        position: relative;
-        border: none;
-        margin: 0px 0px 0px 10px;
-        padding: 0px 1px 11px 10px;
-        overflow: hidden;
-        min-height: 58vh;
-        background-color: none;
-      }
-}
-
-@media screen and (max-width:1000px) {
-    .Contact .Contact-work {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(500px,500px));
-        justify-content: center;
-        text-align: center;
-        margin-top: 15px;
-    }
-    .Contact .Contact-work .email-form{
-        width: 500px;
-       margin: 0px 0px 0px 20px;
-    }
-    .Contact .contact-image .contact-all{
-        position: relative;
-        height: 55%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,200px));
-        justify-content: space-between;
-        text-align: center;
-        justify-content: space-between;
-        overflow: hidden;
-        padding: 0px 0px 0px 0px;
-    }
-    .Contact .contact-image .image{
-        width: 255px;
-        height: 370px;
-      }
-      .image-words .hover-btn{
-        margin-top: 0px;
-    }
-}
-@media screen and (max-width:600px) {
-    .Contact .Contact-work {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(500px,500px));
-        justify-content: center;
-        text-align: center;
-        margin-top: 15px;
-    }
-    .Contact .Contact-work .email-form{
-        width: 400px;
-       margin: 0px 0px 0px 20px;
-    }
-}
-
-@media screen and (max-width:470px) {
-    .Contact .Contact-work .email-form{
-        width: 320px;
-       margin: 0px 0px 0px 0px;
-    }
-    .Contact .Contact-work .email-form .input{
-        width: 90%;
-     }
-     .Contact .contact-image .contact-all{
-        position: relative;
-        height: 55%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(50px,190px));
-        justify-content: space-between;
-        text-align: center;
-        justify-content: space-between;
-        overflow: hidden;
-        padding: 0px 0px 0px 0px;
-    }
-   .Contact .contact-image .image{
-        width: 200px;
-        height: 370px;
-      }
-      .image-words .hover-btn{
-        margin-top: 0px;
-    }
-    .Contact .contact-image{
-        position: relative;
-        border: none;
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 1px 0px;
-        overflow: hidden;
-        min-height: 58vh;
-        width: 380px;
-        margin-left: 50px;
-      }
-      .Contact .contact-image .contact-all::before{
-        position: absolute;
-        content: '';
-        top: 100px;
-        left: 5px;
-        background-color:  var(--Header-background-color);
-        width: 98%;
-        height: 72%;
-        border: none;
-        border-radius: 10px;
-        box-shadow: -1px 1px 7px 2px gray; 
-    }
-    
+  .Contact .contact-image .image {
+    width: 200px;
+    height: 300px;
+    margin-top: -10px;
+  }
 }
