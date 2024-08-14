@@ -1,5 +1,4 @@
 import "./Skills.css";
-
 const Skills = () => {
   return (
     <div className="Skills" id="Skills">
@@ -10,7 +9,7 @@ const Skills = () => {
 
       <div className="Skills-box">
         <div className="tech1">
-          <h2 className="Technical">Technical Skills</h2>
+          <h2 className="Technical">Technical Skills (FrontEnd Dev)</h2>
           <div className="Skills-box-line">
             <div className="Skills-box-rating">
               <div className="line-p">
@@ -19,6 +18,7 @@ const Skills = () => {
               </div>
               <div className="lines"></div>
             </div>
+
             <div className="Skills-box-rating">
               <div className="line-p">
                 <p className="html-p">CSS</p>
@@ -26,19 +26,99 @@ const Skills = () => {
               </div>
               <div className="lines2"></div>
             </div>
+
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">Scss/Sass</p>
+                <p className="html-p-p">77%</p>
+              </div>
+              <div className="lines3"></div>
+            </div>
+
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">TailWind CSS</p>
+                <p className="html-p-p">85%</p>
+              </div>
+              <div className="lines4"></div>
+            </div>
+
             <div className="Skills-box-rating">
               <div className="line-p">
                 <p className="html-p">Java Script</p>
-                <p className="html-p-p">72%</p>
+                <p className="html-p-p">75%</p>
+              </div>
+              <div className="lines5"></div>
+            </div>
+
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">React JS</p>
+                <p className="html-p-p">80%</p>
+              </div>
+              <div className="lines6"></div>
+            </div>
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">Next JS</p>
+                <p className="html-p-p">75%</p>
+              </div>
+              <div className="lines5"></div>
+            </div>
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">Git</p>
+                <p className="html-p-p">70%</p>
+              </div>
+              <div className="lines7"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="tech1">
+          <h2 className="Technical">Technical Skills (BackEnd Dev)</h2>
+          <div className="Skills-box-line">
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">Node Js</p>
+                <p className="html-p-p">77%</p>
               </div>
               <div className="lines3"></div>
             </div>
             <div className="Skills-box-rating">
               <div className="line-p">
-                <p className="html-p">React JS</p>
-                <p className="html-p-p">65%</p>
+                <p className="html-p">Mysql</p>
+                <p className="html-p-p">75%</p>
               </div>
-              <div className="lines4"></div>
+              <div className="lines5"></div>
+            </div>
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">Express Js</p>
+                <p className="html-p-p">80%</p>
+              </div>
+              <div className="lines2"></div>
+            </div>
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">Firebase</p>
+                <p className="html-p-p">70%</p>
+              </div>
+              <div className="lines7"></div>
+            </div>
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">Mongoose</p>
+                <p className="html-p-p">75%</p>
+              </div>
+              <div className="lines5"></div>
+            </div>
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">Mongodb</p>
+                <p className="html-p-p">80%</p>
+              </div>
+              <div className="lines2"></div>
             </div>
           </div>
         </div>

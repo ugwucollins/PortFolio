@@ -11,7 +11,7 @@ const Contact = ({ sendEmail, form }: any) => {
         <div className="Contact-work">
           <div className="Contact-form">
             <form ref={form} className="email-form" onSubmit={sendEmail}>
-              <div className="clicked">
+              <div className="clicked" id="Ids">
                 <input
                   type="text"
                   className="input"
@@ -84,6 +84,9 @@ const Contact = ({ sendEmail, form }: any) => {
                 <h4 className="h4">Get In Touch</h4>
                 <h1 className="h1">Have a Project On Your Mind</h1>
                 <button className="hover-btn">
+                  {/* <a href="#Ids">
+                    <p>Contact Me</p>
+                  </a> */}
                   <p>Contact Me</p>
                 </button>
               </div>

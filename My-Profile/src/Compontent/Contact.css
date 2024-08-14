@@ -334,7 +334,7 @@
   }
   .Contact .contact-image .contact-all {
     position: relative;
-    height: 55%;
+    height: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 190px));
     justify-content: space-between;

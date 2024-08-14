@@ -29,13 +29,13 @@ const Header = ({ menus }: any) => {
             }
           ></span>
           <ul className={header ? "ul-header" : "nav .close-icon ~.ul-header"}>
-            {menus.map((menu:any,Index:any) => (
+            {menus.map((menu: any, Index: any) => (
               <li key={menu} className="li-header">
                 <Link
                   onClick={() => {
                     setHeader(false);
                     setremoveheader(true);
-                    setselectIndex(Index)
+                    setselectIndex(Index);
                   }}
                   to={menu.title}
                   key={menu.id}
@@ -43,13 +43,15 @@ const Header = ({ menus }: any) => {
                   duration={1200}
                   smooth={true}
                   // className="a-header"
-                  className={selectIndex === Index ?"active":"a-header"}
+                  className={selectIndex === Index ? "active" : "a-header"}
                 >
                   {menu.title}
                 </Link>
               </li>
             ))}
-            <DarkMode />
+            <div className="dark-small">
+              <DarkMode />
+            </div>
           </ul>
           <span
             onClick={close}

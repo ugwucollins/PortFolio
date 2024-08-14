@@ -22,7 +22,19 @@ const Services = () => {
 
         <ServiceBox
           icon={<i className="bx bx-laptop"></i>}
-          header3="Graphic Designer"
+          header3="Backend Developer"
+          paragraph=" PROFESSIONAL OBJECTIVE: To contribute in achieving organizational
+          goals through hard work and commitment to sound professional
+          practice in a diligent way while seeking for further improvement in
+          sound professional knowledge and career development."
+          paragraph2=" Passionate about learning and developing with a desire to apply for
+          skills on a larger development team. Eager to tackle more complex
+          problems and continue to find ways to maximize user efficiency."
+        />
+
+        <ServiceBox
+          icon={<i className="bx bx-code-alt"></i>}
+          header3="Fullstack Developer"
           paragraph=" PROFESSIONAL OBJECTIVE: To contribute in achieving organizational
           goals through hard work and commitment to sound professional
           practice in a diligent way while seeking for further improvement in

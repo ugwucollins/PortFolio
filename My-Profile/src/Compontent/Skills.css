@@ -1,33 +1,29 @@
-:root{
-  --Skills-background:#92c7c761;
-  --skills-color:rgba(0, 0, 0, 0.835);
+:root {
+  --Skills-background: #92c7c761;
+  --skills-color: rgba(0, 0, 0, 0.835);
   --line-color: white;
   --h1-color2: rgb(187, 0, 69);
   --circle-before-background-color: white;
 
   /* --circle-background-color: #fcfeff; */
   --circle-background-color: rgba(245, 222, 179, 0.945);
-
- }
-.dark-mode{
-   --Skills-background:rgba(0, 0, 0, 0.382);
-   --skills-color:#fcff;
-   --line-color: rgb(80, 11, 52);
-   --h1-color2: whitesmoke;
-   --circle-background-color: #2b1b17;
-   --circle-before-background-color: rgb(80, 11, 52);
-
-
- }
- *{
+}
+.dark-mode {
+  --Skills-background: rgba(0, 0, 0, 0.382);
+  --skills-color: #fcff;
+  --line-color: rgb(80, 11, 52);
+  --h1-color2: whitesmoke;
+  --circle-background-color: #2b1b17;
+  --circle-before-background-color: rgb(80, 11, 52);
+}
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
- }
-
+}
 
 /* Skills */
-.Skills{
+.Skills {
   position: relative;
   width: 100%;
   margin-top: 15px;
@@ -37,63 +33,72 @@
   text-align: center;
   background-color: var(--Skills-background);
 }
-.Skills-box{
+.Skills-box {
   position: relative;
   margin-top: 55px;
   width: 100%;
   display: grid;
-  grid-template-columns: 
-  repeat(auto-fit,minmax(300px,500px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
   justify-content: center;
   text-align: center;
   column-gap: 30px;
   row-gap: 10px;
 }
-.Skills .Skills-h1{
+/* .Skills-box {
+  position: relative;
+  margin-top: 55px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  justify-content: center;
+  text-align: center;
+  column-gap: 30px;
+  row-gap: 10px;
+} */
+.Skills .Skills-h1 {
   color: var(--h1-color);
 }
 
-
 /* Skills-box-line */
-.Skills-box-line{
+.Skills-box-line {
   position: relative;
   width: 100%;
-  min-height: 55vh;
+  min-height: 50vh;
   padding: 10px 10px 10px 10px;
   box-shadow: 1px 2px 5px gray;
-  background: linear-gradient(to right,transparent,whitesmoke);
+  background: linear-gradient(to right, transparent, whitesmoke);
   border: none;
   border-radius: 10px;
   margin-top: 20px;
 }
-.dark-mode .Skills-box-line{
+.dark-mode .Skills-box-line {
   position: relative;
   width: 100%;
   min-height: 50vh;
   box-shadow: none;
   background: none;
 }
-.Skills-box-rating{
+.Skills-box-rating {
   margin-bottom: 28px;
 }
-.Skills-box-rating .line-p{
+.Skills-box-rating .line-p {
   display: flex;
   justify-content: space-between;
-  margin:0px 10px 5px 10px;
+  margin: 0px 10px 5px 10px;
   font-size: 16px;
   font-weight: 700;
   color: var(--skills-color);
 }
-.lines{
- position: relative;
- width: 100%;
- height: 11px;
- background-color: var(--line-color);
- border: none;
- border-radius: 10px;
- overflow: hidden;
+.lines {
+  position: relative;
+  width: 100%;
+  height: 11px;
+  background-color: var(--line-color);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.lines::before{
+.lines::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -101,10 +106,10 @@
   height: 11px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(red,purple);
+  background: linear-gradient(red, purple);
   animation: line 3s linear forwards;
 }
-.dark-mode .lines::before{
+.dark-mode .lines::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -115,17 +120,17 @@
   background: deepskyblue;
   animation: line 3s linear forwards;
 }
-@keyframes line{
-  0%{
+@keyframes line {
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 90%;
   }
 }
 
 /* lines2 */
-.lines2{
+.lines2 {
   position: relative;
   width: 100%;
   height: 11px;
@@ -133,8 +138,8 @@
   border: none;
   border-radius: 10px;
   overflow: hidden;
- }
-.lines2::before{
+}
+.lines2::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -142,10 +147,10 @@
   height: 11px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(red,purple);
+  background: linear-gradient(red, purple);
   animation: line2 3s linear forwards;
 }
-.dark-mode .lines2::before{
+.dark-mode .lines2::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -157,7 +162,7 @@
   animation: line2 3s linear forwards;
 }
 /* lines3 */
-.lines3{
+.lines3 {
   position: relative;
   width: 100%;
   height: 11px;
@@ -165,8 +170,8 @@
   border: none;
   border-radius: 10px;
   overflow: hidden;
- }
-.lines3::before{
+}
+.lines3::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -174,10 +179,10 @@
   height: 11px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(red,purple);
+  background: linear-gradient(red, purple);
   animation: line3 3s linear forwards;
 }
-.dark-mode .lines3::before{
+.dark-mode .lines3::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -188,9 +193,8 @@
   background: deepskyblue;
   animation: line3 3s linear forwards;
 }
-
 /* lines3 */
-.lines4{
+.lines4 {
   position: relative;
   width: 100%;
   height: 11px;
@@ -198,8 +202,8 @@
   border: none;
   border-radius: 10px;
   overflow: hidden;
- }
-.lines4::before{
+}
+.lines4::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -207,10 +211,75 @@
   height: 11px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(red,purple);
+  background: linear-gradient(red, purple);
+  animation: lineT4 3s linear forwards;
+}
+.dark-mode .lines4::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  width: 0%;
+  height: 11px;
+  border: none;
+  border-radius: 10px;
+  background: deepskyblue;
+  animation: lineT4 3s linear forwards;
+}
+/* lines5 */
+.lines5 {
+  position: relative;
+  width: 100%;
+  height: 11px;
+  background-color: var(--line-color);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.lines5::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  width: 0%;
+  height: 11px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(red, purple);
+  animation: line5 3s linear forwards;
+}
+.dark-mode .lines5::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  width: 0%;
+  height: 11px;
+  border: none;
+  border-radius: 10px;
+  background: deepskyblue;
+  animation: line5 3s linear forwards;
+}
+
+/* lines5 */
+.lines6 {
+  position: relative;
+  width: 100%;
+  height: 11px;
+  background-color: var(--line-color);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.lines6::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  width: 0%;
+  height: 11px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(red, purple);
   animation: lineall 3s linear forwards;
 }
-.dark-mode .lines4::before{
+.dark-mode .lines6::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -221,74 +290,100 @@
   background: deepskyblue;
   animation: lineall 3s linear forwards;
 }
-
-
-
-
-
-
-
-
-
-
-
+/* lines5 */
+.lines7 {
+  position: relative;
+  width: 100%;
+  height: 11px;
+  background-color: var(--line-color);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.lines7::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  width: 0%;
+  height: 11px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(red, purple);
+  animation: line7 3s linear forwards;
+}
+.dark-mode .lines7::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  width: 0%;
+  height: 11px;
+  border: none;
+  border-radius: 10px;
+  background: deepskyblue;
+  animation: line7 3s linear forwards;
+}
 
 /* Skills-box-rating-circle */
-.Skills-box-circle{
+.Skills-box-circle {
   position: relative;
-  padding: 15px 0px 0px 10px;
   width: 100%;
   display: grid;
-  grid-template-columns: 
-  repeat(auto-fit,minmax(50px,150px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   justify-content: space-between;
   column-gap: 30px;
-  margin-top: 20px;
   margin: 20px 0px 0px 30px;
+  min-height: 50vh;
   box-shadow: 1px 2px 5px gray;
-  background: linear-gradient(to right,transparent,whitesmoke);
+  background: linear-gradient(to right, transparent, whitesmoke);
   border: none;
   border-radius: 10px;
 }
-.dark-mode .Skills-box-circle{
+.dark-mode .Skills-box-circle {
+  box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.171);
+  background: none;
+}
+/* 
+.dark-mode .Skills-box-circle {
   position: relative;
   padding: 15px 0px 0px 10px;
   width: 100%;
   display: grid;
-  grid-template-columns: 
-  repeat(auto-fit,minmax(50px,150px));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
   justify-content: space-between;
   column-gap: 30px;
-  margin-left: 35px;
+  margin-left: 35px; 
   box-shadow: none;
   background: none;
 }
-.Skills-box-rating-circle{
+  */
+.Skills-box-rating-circle {
   position: relative;
-  padding: 0px 0px 30px 0px;
+  /* padding: 0px 0px 30px 0px; */
+  margin: 10px 0px 0px 15px;
   width: 100px;
   height: 125px;
   margin-bottom: 15px;
 }
-.line-p{
+.line-p {
   display: flex;
   justify-content: space-between;
-  margin:0px 10px 2px 10px;
+  margin: 0px 10px 2px 10px;
   font-size: 16px;
   font-weight: 700;
   color: white;
 }
-.lines-circle{
- position: relative;
- width: 100px;
- height: 100px;
- border: none;
- border-radius: 50%;
- overflow: hidden;
- box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),0px -1px 1px rgba(0, 0, 0, 0.523);
- background-color: var(--circle-before-background-color);
+.lines-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),
+    0px -1px 1px rgba(0, 0, 0, 0.523);
+  background-color: var(--circle-before-background-color);
 }
-.lines-circle::before{
+.lines-circle::before {
   position: absolute;
   content: "";
   top: 0px;
@@ -296,10 +391,14 @@
   width: 0%;
   height: 100%;
   border-radius: 10px;
-  background: conic-gradient(from 90deg,rgba(255, 0, 0, 0.895),rgba(128, 0, 128, 0.906));
+  background: conic-gradient(
+    from 90deg,
+    rgba(255, 0, 0, 0.895),
+    rgba(128, 0, 128, 0.906)
+  );
   animation: line linear 3s forwards;
 }
-.dark-mode .lines-circle::before{
+.dark-mode .lines-circle::before {
   position: absolute;
   content: "";
   top: 0px;
@@ -307,10 +406,10 @@
   width: 0%;
   height: 100%;
   border-radius: 10px;
-  background: conic-gradient(from 90deg, transparent,deepskyblue 1%);
+  background: conic-gradient(from 90deg, transparent, deepskyblue 1%);
   animation: line linear 3s forwards;
 }
-.lines-circle::after{
+.lines-circle::after {
   position: absolute;
   content: "";
   top: 10px;
@@ -325,7 +424,7 @@
   border: none;
   border-radius: 50%;
 }
-.html-p-p2{
+.html-p-p2 {
   position: absolute;
   top: 28%;
   left: 33px;
@@ -333,9 +432,8 @@
   font-weight: 800;
   z-index: 1;
   color: var(--h1-color2);
-
 }
-.html-p2{
+.html-p2 {
   position: absolute;
   bottom: 0px;
   left: 15px;
@@ -345,265 +443,309 @@
 }
 
 /* line 2 */
-.lines-circle2{
+.lines-circle2 {
   position: relative;
   width: 100px;
   height: 100px;
   border: none;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),0px -1px 1px rgba(0, 0, 0, 0.523);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),
+    0px -1px 1px rgba(0, 0, 0, 0.523);
   background-color: var(--circle-before-background-color);
- }
- .lines-circle2::before{
-   position: absolute;
-   content: "";
-   top: 0px;
-   left: 0px;
-   width: 0%;
-   height: 100%;
-   border-radius: 10px;
-   background: conic-gradient(from 90deg,rgba(255, 0, 0, 0.895),rgba(128, 0, 128, 0.906));
-   animation: line0 linear 3s forwards;
- }
- .dark-mode .lines-circle2::before{
-   position: absolute;
-   content: "";
-   top: 0px;
-   left: 0px;
-   width: 0%;
-   height: 100%;
-   border-radius: 10px;
-   background: conic-gradient(from 90deg, transparent,deepskyblue 1%);
-   animation: line0 3s linear forwards;
-  }
- .lines-circle2::after{
-   position: absolute;
-   content: "";
-   top: 10px;
-   left: 10.5px;
-   width: 80%;
-   height: 80%;
-   border: none;
-   border-radius: 10px;
-   background-color: var(--circle-background-color);
-   /* background-color: #2b1b17fd;
+}
+.lines-circle2::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  background: conic-gradient(
+    from 90deg,
+    rgba(255, 0, 0, 0.895),
+    rgba(128, 0, 128, 0.906)
+  );
+  animation: line0 linear 3s forwards;
+}
+.dark-mode .lines-circle2::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  background: conic-gradient(from 90deg, transparent, deepskyblue 1%);
+  animation: line0 3s linear forwards;
+}
+.lines-circle2::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10.5px;
+  width: 80%;
+  height: 80%;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--circle-background-color);
+  /* background-color: #2b1b17fd;
    background-color: rgba(38, 34, 34, 0.549); */
-   border: none;
-   border-radius: 50%;
- }
- @keyframes line2{
-  0%{
+  border: none;
+  border-radius: 50%;
+}
+@keyframes line2 {
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 80%;
   }
 }
-@keyframes line0{
-  0%{
+@keyframes line3 {
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
+    width: 77%;
+  }
+}
+@keyframes lineT4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes line0 {
+  0% {
+    width: 0%;
+  }
+  100% {
     width: 75%;
   }
 }
 
 /* line 3 */
-.lines-circle3{
+.lines-circle3 {
   position: relative;
   width: 100px;
   height: 100px;
   border: none;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),0px -1px 1px rgba(0, 0, 0, 0.523);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),
+    0px -1px 1px rgba(0, 0, 0, 0.523);
   background-color: var(--circle-before-background-color);
- }
- .lines-circle3::before{
-   position: absolute;
-   content: "";
-   top: 0px;
-   left: 0px;
-   width: 0%;
-   height: 100%;
-   border-radius: 10px;
-   background: conic-gradient(from 90deg,rgba(255, 0, 0, 0.895),rgba(128, 0, 128, 0.906));
-   animation: line3 linear 3s forwards;
- }
- .dark-mode .lines-circle3::before{
-   position: absolute;
-   content: "";
-   top: 0px;
-   left: 0px;
-   width: 0%;
-   height: 100%;
-   border-radius: 10px;
-   background: conic-gradient(from 90deg, transparent,deepskyblue 1%);
-   animation: line3 3s linear forwards;
-  }
- .lines-circle3::after{
-   position: absolute;
-   content: "";
-   top: 10px;
-   left: 10.5px;
-   width: 80%;
-   height: 80%;
-   border: none;
-   border-radius: 10px;
-   background-color: var(--circle-background-color);
-   /* background-color: #2b1b17fd;
+}
+.lines-circle3::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  background: conic-gradient(
+    from 90deg,
+    rgba(255, 0, 0, 0.895),
+    rgba(128, 0, 128, 0.906)
+  );
+  animation: line5 linear 3s forwards;
+}
+.dark-mode .lines-circle3::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  background: conic-gradient(from 90deg, transparent, deepskyblue 1%);
+  animation: line5 3s linear forwards;
+}
+.lines-circle3::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10.5px;
+  width: 80%;
+  height: 80%;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--circle-background-color);
+  /* background-color: #2b1b17fd;
    background-color: rgba(38, 34, 34, 0.549); */
-   border: none;
-   border-radius: 50%;
- }
- @keyframes line3{
-  0%{
+  border: none;
+  border-radius: 50%;
+}
+@keyframes line5 {
+  0% {
     width: 0%;
   }
-  100%{
-    width: 72%;
+  100% {
+    width: 75%;
   }
 }
-
-
 
 /* line 4 */
-.lines-circle4{
+.lines-circle4 {
   position: relative;
   width: 100px;
   height: 100px;
   border: none;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),0px -1px 1px rgba(0, 0, 0, 0.523);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),
+    0px -1px 1px rgba(0, 0, 0, 0.523);
   background-color: var(--circle-before-background-color);
- }
- .lines-circle4::before{
-   position: absolute;
-   content: "";
-   top: 0px;
-   left: 0px;
-   width: 0%;
-   height: 100%;
-   border-radius: 10px;
-   background: conic-gradient(from 90deg,rgba(255, 0, 0, 0.895),rgba(128, 0, 128, 0.906));
-   animation: line4 linear 3s forwards;
- }
- .dark-mode .lines-circle4::before{
-   position: absolute;
-   content: "";
-   top: 0px;
-   left: 0px;
-   width: 0%;
-   height: 100%;
-   border-radius: 10px;
-   background: conic-gradient(from 90deg, transparent,deepskyblue 1%);
-   animation: line4 3s linear forwards;
-  }
- .lines-circle4::after{
-   position: absolute;
-   content: "";
-   top: 10px;
-   left: 10.5px;
-   width: 80%;
-   height: 80%;
-   border: none;
-   border-radius: 10px;
-   background-color: var(--circle-background-color);
-   /* background-color: #2b1b17fd;
+}
+.lines-circle4::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  background: conic-gradient(
+    from 90deg,
+    rgba(255, 0, 0, 0.895),
+    rgba(128, 0, 128, 0.906)
+  );
+  animation: line4 linear 3s forwards;
+}
+.dark-mode .lines-circle4::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  background: conic-gradient(from 90deg, transparent, deepskyblue 1%);
+  animation: line4 3s linear forwards;
+}
+.lines-circle4::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10.5px;
+  width: 80%;
+  height: 80%;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--circle-background-color);
+  /* background-color: #2b1b17fd;
    background-color: rgba(38, 34, 34, 0.549); */
-   border: none;
-   border-radius: 50%;
- }
- 
- @keyframes lineall{
-  0%{
+  border: none;
+  border-radius: 50%;
+}
+
+@keyframes lineall {
+  0% {
     width: 0%;
   }
-  100%{
-    width: 65%;
+  100% {
+    width: 80%;
   }
 }
- @keyframes line4{
-  0%{
+@keyframes line7 {
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
+    width: 70%;
+  }
+}
+@keyframes line4 {
+  0% {
+    width: 0%;
+  }
+  100% {
     width: 50%;
   }
 }
 /* line 5 */
-.lines-circle6{
+.lines-circle6 {
   position: relative;
   width: 100px;
   height: 100px;
   border: none;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),0px -1px 1px rgba(0, 0, 0, 0.523);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.523),
+    0px -1px 1px rgba(0, 0, 0, 0.523);
   background-color: var(--circle-before-background-color);
- }
- .lines-circle6::before{
-   position: absolute;
-   content: "";
-   top: 0px;
-   left: 0px;
-   width: 0%;
-   height: 100%;
-   border-radius: 10px;
-   background: conic-gradient(from 90deg,rgba(255, 0, 0, 0.895),rgba(128, 0, 128, 0.906));
-   animation: line6 linear 3s forwards;
- }
- .dark-mode .lines-circle6::before{
-   position: absolute;
-   content: "";
-   top: 0px;
-   left: 0px;
-   width: 0%;
-   height: 100%;
-   border-radius: 10px;
-   background: conic-gradient(from 90deg, transparent,deepskyblue 1%);
-   animation: line6 3s linear forwards;
-  }
- .lines-circle6::after{
-   position: absolute;
-   content: "";
-   top: 10px;
-   left: 10.5px;
-   width: 80%;
-   height: 80%;
-   border: none;
-   border-radius: 10px;
-   background-color: var(--circle-background-color);
-   /* background-color: #2b1b17fd;
+}
+.lines-circle6::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  background: conic-gradient(
+    from 90deg,
+    rgba(255, 0, 0, 0.895),
+    rgba(128, 0, 128, 0.906)
+  );
+  animation: line6 linear 3s forwards;
+}
+.dark-mode .lines-circle6::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  background: conic-gradient(from 90deg, transparent, deepskyblue 1%);
+  animation: line6 3s linear forwards;
+}
+.lines-circle6::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10.5px;
+  width: 80%;
+  height: 80%;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--circle-background-color);
+  /* background-color: #2b1b17fd;
    background-color: rgba(38, 35, 34, 0.549); */
-   border: none;
-   border-radius: 50%;
- }
- @keyframes line6{
-  0%{
+  border: none;
+  border-radius: 50%;
+}
+@keyframes line6 {
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 80%;
   }
 }
 
-
-
-   /* For smaller Devices */
- @media (max-width:1200px) {
-  .Skills-box-circle{
-  padding: 10px 10px 30px 10px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 
-  repeat(auto-fit,minmax(50px,150px));
-  justify-content: space-between;
-  column-gap: 30px;
-  row-gap: 10px;
-  margin:  10px 0px 0px 0px;
- }
+/* For smaller Devices */
+@media (max-width: 1200px) {
+  .Skills-box-circle {
+    padding: 10px 10px 30px 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 10px;
+    margin: 10px 0px 0px 0px;
+  }
 }
-
+/* For smaller Devices */
+@media (max-width: 820px) {
+  .Skills-box {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
+  }
+}
