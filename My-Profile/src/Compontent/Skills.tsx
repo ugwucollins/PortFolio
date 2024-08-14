@@ -68,9 +68,9 @@ const Skills = () => {
             <div className="Skills-box-rating">
               <div className="line-p">
                 <p className="html-p">Git</p>
-                <p className="html-p-p">70%</p>
+                <p className="html-p-p">77%</p>
               </div>
-              <div className="lines7"></div>
+              <div className="lines2"></div>
             </div>
           </div>
         </div>
