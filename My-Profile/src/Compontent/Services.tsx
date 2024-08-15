@@ -15,7 +15,7 @@ const Services = () => {
           header3="FrontEnd Developer"
           paragraph={`Am a frontend developer  who have used Html and css to create a stunning landening Page which has attracted more acolades with other projects here is the Github Link: https://ugwucollins.github.io/Html-Css-and-JavaScrpit-projects/landening1/page.html
 
-            And also i used html,css and javaScript to build the Amazon Economecs which was fully mobile responsive and also interactive you can check it out on :
+            And also used html,css and javaScript to build the Amazon Economecs which was fully mobile responsive and also interactive you can check it out on :
             `}
           links="https://ugwucollins.github.io/Html-Css-and-JavaScrpit-projects/amazon-project/index.html"
           paragraph2="I Am very detailed and use straightforward codes to ensure clean and easy maintenance, to mention but a few is the expertise in ensuring my projects often meets quality standards by using javaScript Frameworks like React.Js in building my Portfolio and also using Vercel in debuging(hosting) it and Using Only html and Tailwind css in building my Acme Rocket website fully mobile responsive.
@@ -29,9 +29,9 @@ const Services = () => {
         <ServiceBox
           icon={<i className="bx bx-barcode-reader"></i>}
           header3="Backend Developer"
-          paragraph={`Am a frontend developer  who have used Html and css to create a stunning landening Page which has attracted more acolades with other projects here is the Github Link: https://ugwucollins.github.io/Html-Css-and-JavaScrpit-projects/landening1/page.html
+          paragraph={`Am a backend developer  who have used Node.js and express.js in creating Apis that works well by using CRUD Api which helps you to create a post, Able to read and get it, update and Delete each post. And been able to get a post by it ID.
 
-            And also i used html,css and javaScript to build the Amazon Economecs which was fully mobile responsive and also interactive you can check it out on :
+            And also used html,css and javaScript to build the Amazon Economecs which was fully mobile responsive and also interactive you can check it out on :
             `}
           links="https://ugwucollins.github.io/Html-Css-and-JavaScrpit-projects/amazon-project/index.html"
           paragraph2="I Am very detailed and use straightforward codes to ensure clean and easy maintenance, to mention but a few is the expertise in ensuring my projects often meets quality standards by using javaScript Frameworks like React.Js in building my Portfolio and also using Vercel in debuging(hosting) it and Using Only html and Tailwind css in building my Acme Rocket website fully mobile responsive.
