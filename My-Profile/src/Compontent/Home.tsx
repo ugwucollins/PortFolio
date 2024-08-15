@@ -9,7 +9,7 @@ const Home = ({ Open }: any) => {
           <h1 className="home-h1">Hi I'm Tony Collins</h1>
           <h2 className="type">
             <div className="writing"></div>
-            
+
             {/* <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -26,10 +26,10 @@ const Home = ({ Open }: any) => {
             /> */}
           </h2>
           <p className="home-p">
-            Computer Based Test (CBT) is one of the modern technological
-            inventories in an educational system ( Tachia, 2018). Computer Based
-            Test is defined as tests or assessments that are administered by
-            computer in either stand-alone or dedicated network, or by other
+            A Passionate Fullstack developer willing in learning and developing
+            with a desire to apply for more skills on a larger development team.
+            Eager to tackle more complex problems and continue to find ways to
+            maximize user efficiency.
           </p>
         </div>
 

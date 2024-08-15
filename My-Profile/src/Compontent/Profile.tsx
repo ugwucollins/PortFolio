@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import "./Profile.css";
 
@@ -14,12 +13,11 @@ const Profile = () => {
   const [active3, setactive3] = useState(false);
   const [active4, setactive4] = useState(false);
 
-
   const onhtml = () => {
     sethtml(true);
     setcss(false);
     setjava(false);
-    setReact(false)
+    setReact(false);
     // Active
     setactive(true);
     setactive2(false);
@@ -30,7 +28,7 @@ const Profile = () => {
     setcss(true);
     setjava(false);
     sethtml(false);
-    setReact(false)
+    setReact(false);
 
     // Active
     setactive2(true);
@@ -43,7 +41,7 @@ const Profile = () => {
     setactive(true);
     setcss(false);
     sethtml(false);
-    setReact(false)
+    setReact(false);
 
     // Active
     setactive2(false);
@@ -62,11 +60,10 @@ const Profile = () => {
     setactive3(false);
     setactive4(true);
   };
-  
+
   return (
     <div className="Profiles" id="Profile">
       <div className="Profiles-work">
-
         <div className="Profiles-head">
           <h1 className="head-h1">My Services/ Projects</h1>
           <p>What Can I Do For You</p>
@@ -75,75 +72,82 @@ const Profile = () => {
         <div className="Profiles-btn">
           <div className="all-btn">
             <button
-            className={active ? "Onactive-p" : "profile-btn"}
-            onClick={onhtml}>All Project</button>
-            <button 
-            className={active2 ? "Onactive-p" : "profile-btn2"}
+              className={active ? "Onactive-p" : "profile-btn"}
+              onClick={onhtml}
+            >
+              All Project
+            </button>
+            <button
+              className={active2 ? "Onactive-p" : "profile-btn2"}
+              onClick={oncss}
+            >
+              Css Project
+            </button>
 
-            onClick={oncss}>Css Project</button>
+            <button
+              className={active3 ? "Onactive-p" : "profile-btn3"}
+              onClick={onjava}
+            >
+              Javascript Project
+            </button>
 
-            <button  className={active3 ? "Onactive-p" : "profile-btn3"}
-            onClick={onjava} >Javascript Project</button>
-
-            <button className={active4 ? "Onactive-p" : "profile-btn4"} 
-            onClick={onreact} >React Project</button>
+            <button
+              className={active4 ? "Onactive-p" : "profile-btn4"}
+              onClick={onreact}
+            >
+              React Project
+            </button>
           </div>
         </div>
 
         <div className="Profiles-display">
-
-          {html && 
-            <div  className="html">
-            
+          {html && (
+            <div className="html">
               <div className="all">
                 <div className="css-all">
                   <div className="hover"></div>
-                <div className="css-image">
-                    <img src="code.png" className="images"/>
-                </div>
-
-                  <div className="css-word">
-                      <h3>CSS Styles</h3> 
-
-                        <p className="about-p">
-                          <b>AM</b> a Front-End Developer that will help companies create and
-                          maintain a better code base for reusability.
-                        </p>
+                  <div className="css-image">
+                    <img src="code.png" className="images" />
                   </div>
 
+                  <div className="css-word">
+                    <h3>CSS Styles</h3>
+
+                    <p className="about-p">
+                      <b>AM</b> a Front-End Developer that will help companies
+                      create and maintain a better code base for reusability.
+                    </p>
+                  </div>
                 </div>
-              
+
                 <div className="css-all">
                   <div className="css-image">
-                      <img src="code.png" className="images"/>
-                    </div>
-
-                    <div className="css-word">
-                        <h3>CSS Styles</h3> 
-
-                          <p className="about-p">
-                            <b>AM</b> a Front-End Developer that will help companies create and
-                            maintain a better code base for reusability.
-                          </p>
-                    </div>
-
-                </div>
-
-
-                <div className="css-all">
-
-                <div className="css-image">
-                    <img src="code4.png" className="images"/>
+                    <img src="code.png" className="images" />
                   </div>
 
                   <div className="css-word">
-                      <h3>CSS Styles</h3> 
-                      <div className="css-p">
-                        <p className="about-p">
-                          <b>AM</b> a Front-End Developer that will help companies create and
-                          maintain a better code base for reusability.
-                        </p>
-                      </div>
+                    <h3>CSS Styles</h3>
+
+                    <p className="about-p">
+                      <b>AM</b> a Front-End Developer that will help companies
+                      create and maintain a better code base for reusability.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="css-all">
+                  <div className="css-image">
+                    <img src="code4.png" className="images" />
+                  </div>
+
+                  <div className="css-word">
+                    <h3>CSS Styles</h3>
+                    <div className="css-p">
+                      <p className="about-p">
+                        <b>AM</b> a Front-End Developer that will help companies
+                        create and maintain a better code base for reusability.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,196 +155,197 @@ const Profile = () => {
               <div className="all Java">
                 <div className="css-all">
                   <div className="css-image">
-                    <img src="code 2.png" className="images"/>
+                    <img src="code 2.png" className="images" />
                   </div>
 
                   <div className="css-word">
-                      <h3>Java InterFace</h3> 
-                      <div className="css-p">
-                        <p className="about-p">
-                          <b>AM</b> a Front-End Developer that will help companies create and
-                          maintain a better code base for reusability.
-                        </p>
-                      </div>
+                    <h3>Java InterFace</h3>
+                    <div className="css-p">
+                      <p className="about-p">
+                        <b>AM</b> a Front-End Developer that will help companies
+                        create and maintain a better code base for reusability.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              
-                <div className="css-all">                 
-                <div className="css-image">
-                    <img src="code 2.png" className="images"/>
-                </div>
+
+                <div className="css-all">
+                  <div className="css-image">
+                    <img src="code 2.png" className="images" />
+                  </div>
 
                   <div className="css-word">
-                      <h3>Java InterFace</h3> 
-                      <div className="css-p">
-                        <p className="about-p">
-                          <b>AM</b> a Front-End Developer that will help companies create and
-                          maintain a better code base for reusability.
-                        </p>
-                      </div>
+                    <h3>Java InterFace</h3>
+                    <div className="css-p">
+                      <p className="about-p">
+                        <b>AM</b> a Front-End Developer that will help companies
+                        create and maintain a better code base for reusability.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div className="all react">
-                  <div className="css-all">
-                    <div className="css-image">
-                      <img src="code 3.png" className="images"/>
+                <div className="css-all">
+                  <div className="css-image">
+                    <img src="code 3.png" className="images" />
+                  </div>
+                  <div className="css-word">
+                    <h3>React JS</h3>
+                    <div className="css-p">
+                      <p className="about-p">
+                        <b>AM</b> a Front-End Developer that will help companies
+                        create and maintain a better code base for reusability.
+                      </p>
                     </div>
-                    <div className="css-word">
-                    <h3>React JS</h3> 
-                        <div className="css-p">
-                          <p className="about-p">
-                            <b>AM</b> a Front-End Developer that will help companies create and
-                            maintain a better code base for reusability.
-                          </p>
-                        </div>
-                    </div>   
                   </div>
-                
-                  <div className="css-all">
-                    <div className="css-image">
-                      <img src="code 3.png" className="images"/>
+                </div>
+
+                <div className="css-all">
+                  <div className="css-image">
+                    <img src="code 3.png" className="images" />
+                  </div>
+                  <div className="css-word">
+                    <h3>React JS</h3>
+                    <div className="css-p">
+                      <p className="about-p">
+                        <b>AM</b> a Front-End Developer that will help companies
+                        create and maintain a better code base for reusability.
+                      </p>
                     </div>
-                    <div className="css-word">
-                    <h3>React JS</h3> 
-                        <div className="css-p">
-                          <p className="about-p">
-                            <b>AM</b> a Front-End Developer that will help companies create and
-                            maintain a better code base for reusability.
-                          </p>
-                        </div>
-                    </div>   
                   </div>
-              </div>
-            </div>    
-            }
-
-          {css && 
-          <div className="css">
-            <div className="css-all">
-              <div className="css-image">
-                <img src="code.png" className="images"/>
-              </div>
-              <div className="css-word">
-                  <h3>CSS Styles</h3> 
-                  <div className="css-p">
-                    <p className="about-p">
-                      <b>AM</b> a Front-End Developer that will help companies create and
-                      maintain a better code base for reusability.
-                    </p>
-                  </div>
-              </div>
-
-              
-            </div>
-
-            <div className="css-all">
-              <div className="css-image">
-                <img src="code.png" className="images"/>
-              </div>
-              <div className="css-word">
-                  <h3>CSS Styles</h3> 
-                  <div className="css-p">
-                    <p className="about-p">
-                      <b>AM</b> a Front-End Developer that will help companies create and
-                      maintain a better code base for reusability.
-                    </p>
-                  </div>
-              </div>
-
-            </div>
-
-            <div className="css-all">
-              <div className="css-image">
-                <img src="code4.png" className="images"/>
-              </div>
-
-              <div className="css-word">
-                  <h3>CSS Styles</h3> 
-                  <div className="css-p">
-                    <p className="about-p">
-                      <b>AM</b> a Front-End Developer that will help companies create and
-                      maintain a better code base for reusability.
-                    </p>
-                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          }
+          )}
 
-          {java &&
+          {css && (
+            <div className="css">
+              <div className="css-all">
+                <div className="css-image">
+                  <img src="code.png" className="images" />
+
+                  {/* <iframe
+                    className="images"
+                    src="https://port-folio-eight-mu.vercel.app/"
+                  ></iframe> */}
+                </div>
+                <div className="css-word">
+                  <h3>CSS Styles</h3>
+                  <div className="css-p">
+                    <p className="about-p">
+                      <b>AM</b> a Front-End Developer that will help companies
+                      create and maintain a better code base for reusability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="css-all">
+                <div className="css-image">
+                  <img src="code.png" className="images" />
+                </div>
+                <div className="css-word">
+                  <h3>CSS Styles</h3>
+                  <div className="css-p">
+                    <p className="about-p">
+                      <b>AM</b> a Front-End Developer that will help companies
+                      create and maintain a better code base for reusability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="css-all">
+                <div className="css-image">
+                  <img src="code4.png" className="images" />
+                </div>
+
+                <div className="css-word">
+                  <h3>CSS Styles</h3>
+                  <div className="css-p">
+                    <p className="about-p">
+                      <b>AM</b> a Front-End Developer that will help companies
+                      create and maintain a better code base for reusability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {java && (
             <div className="css Java">
-              <div className="css-all">                
+              <div className="css-all">
                 <div className="css-image">
-                  <img src="code 2.png" className="images"/>
+                  <img src="code 2.png" className="images" />
                 </div>
 
                 <div className="css-word">
-                    <h3>Java InterFace</h3> 
-                    <div className="css-p">
-                      <p className="about-p">
-                        <b>AM</b> a Front-End Developer that will help companies create and
-                        maintain a better code base for reusability.
-                      </p>
-                    </div>
+                  <h3>Java InterFace</h3>
+                  <div className="css-p">
+                    <p className="about-p">
+                      <b>AM</b> a Front-End Developer that will help companies
+                      create and maintain a better code base for reusability.
+                    </p>
+                  </div>
                 </div>
               </div>
-            
-              <div className="css-all">               
+
+              <div className="css-all">
                 <div className="css-image">
-                  <img src="code 2.png" className="images"/>
+                  <img src="code 2.png" className="images" />
                 </div>
                 <div className="css-word">
-                    <h3>Java InterFace</h3> 
-                    <div className="css-p">
-                      <p className="about-p">
-                        <b>AM</b> a Front-End Developer that will help companies create and
-                        maintain a better code base for reusability.
-                      </p>
-                    </div>
+                  <h3>Java InterFace</h3>
+                  <div className="css-p">
+                    <p className="about-p">
+                      <b>AM</b> a Front-End Developer that will help companies
+                      create and maintain a better code base for reusability.
+                    </p>
+                  </div>
                 </div>
               </div>
-          </div>
-           }
-
-          {react && 
-              <div className="css react">
-                <div className="css-all">
-                  <div className="css-image">
-                    <img src="code 3.png" className="images"/>
-                  </div>
-
-                  <div className="css-word">
-                  <h3>React JS</h3> 
-                      <div className="css-p">
-                        <p className="about-p">
-                          <b>AM</b> a Front-End Developer that will help companies create and
-                          maintain a better code base for reusability.
-                        </p>
-                      </div>
-                  </div>
-                </div>
-              
-                <div className="css-all">
-                  <div className="css-image">
-                    <img src="code 3.png" className="images"/>
-                  </div>
-
-                  <div className="css-word">
-                  <h3>React JS</h3> 
-                      <div className="css-p">
-                        <p className="about-p">
-                          <b>AM</b> a Front-End Developer that will help companies create and
-                          maintain a better code base for reusability.
-                        </p>
-                      </div>
-                  </div>
-                </div>
             </div>
-          }
-        </div>
+          )}
 
+          {react && (
+            <div className="css react">
+              <div className="css-all">
+                <div className="css-image">
+                  <img src="code 3.png" className="images" />
+                </div>
+
+                <div className="css-word">
+                  <h3>React JS</h3>
+                  <div className="css-p">
+                    <p className="about-p">
+                      <b>AM</b> a Front-End Developer that will help companies
+                      create and maintain a better code base for reusability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="css-all">
+                <div className="css-image">
+                  <img src="code 3.png" className="images" />
+                </div>
+
+                <div className="css-word">
+                  <h3>React JS</h3>
+                  <div className="css-p">
+                    <p className="about-p">
+                      <b>AM</b> a Front-End Developer that will help companies
+                      create and maintain a better code base for reusability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

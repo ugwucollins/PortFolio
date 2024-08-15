@@ -73,12 +73,12 @@ const About = () => {
         <div className="about-intro">
           <h2>Let Me Introduce Myself</h2>
           <p className="about-p">
-            <b>I'm</b> Ugwu Somtochukwu Collins by name, am an honest person
-            that likes to work hard for a living.&nbsp; &nbsp;
-            <b>AM</b> a Front-End Developer that will help companies create and
-            maintain a better code base for reusability. Capable of continuous
-            learning from senior developers while still nurturing junior
-            developers
+            <b>I'm</b> Ugwu Somtochukwu Collins by name, A passionate fullstack
+            Developer with a knack for creating intutive and high performaing
+            web Application. Motivated to contribute to the growth and success
+            of a progressive organization by leveraging my story interpersonal
+            Skills and commitment to excellence and Also create and maintain a
+            better code base for reusability &nbsp; &nbsp;
           </p>
 
           <div className="buttons">
