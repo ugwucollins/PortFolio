@@ -19,14 +19,14 @@ const Awards = () => {
         </span>
 
         <span className="MainSkills-span1">
-          <span className="MainSkills-span-p1">Bachelor Of Science</span>
+          <span className="MainSkills-span-p1"> Science Student</span>
           <span className="MainSkills-span-p2">I Love to move things.</span>
         </span>
 
         <div className="MainSkills-button">
           <button className="btn">
             <a href="Collins CV.pdf" download="Collins CV.pdf" className="a">
-            Download Cv  <i className="bx bx-vertical-bottom"></i>
+              Download Cv <i className="bx bx-vertical-bottom"></i>
             </a>
           </button>
         </div>

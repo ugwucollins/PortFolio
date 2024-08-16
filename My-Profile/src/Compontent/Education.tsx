@@ -6,7 +6,7 @@ const Education = () => {
       <div className="MainSkills">
         <span className="MainSkills-span1">
           <span className="MainSkills-span-p1">
-            Online Courses and Bootcamps
+            Online Courses and Practices
           </span>
           <span className="MainSkills-span-p2">
             Delight the user and make it work
@@ -14,12 +14,14 @@ const Education = () => {
         </span>
 
         <span className="MainSkills-span1">
-          <span className="MainSkills-span-p1">Interships and Practices</span>
+          <span className="MainSkills-span-p1">
+            Problems Solving and Projects
+          </span>
           <span className="MainSkills-span-p2">Website. Web Experience__</span>
         </span>
 
         <span className="MainSkills-span1">
-          <span className="MainSkills-span-p1">Bachelor Of Science</span>
+          <span className="MainSkills-span-p1">Science Student</span>
           <span className="MainSkills-span-p2">I Love to move things.</span>
         </span>
 
