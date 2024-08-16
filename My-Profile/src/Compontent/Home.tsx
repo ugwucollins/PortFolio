@@ -26,10 +26,10 @@ const Home = ({ Open }: any) => {
             /> */}
           </h2>
           <p className="home-p">
-            A Passionate Fullstack developer willing in learning and developing
-            with a desire to apply for more skills on a larger development team.
-            Eager to tackle more complex problems and continue to find ways to
-            maximize user efficiency.
+            A Passionate Fullstack developer with a desire of lifting many
+            companies up for more skills on a larger development team. Eager to
+            tackle more complex problems and continue to find ways to maximize
+            user efficiency.
           </p>
         </div>
 

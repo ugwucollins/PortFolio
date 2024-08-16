@@ -113,7 +113,7 @@ const Profile = () => {
             >
               Javascript Project
             </button>
-            +{" "}
+
             <button
               className={active4 ? "Onactive-p" : "profile-btn4"}
               onClick={onreact}
@@ -149,7 +149,7 @@ const Profile = () => {
                 website which was fully mobile responsive and awsome
                     "
                 h="I also"
-                links="https://ugwucollins.github.io/Html-Css-and-JavaScrpit-projects/landening1/page.html"
+                links="https://exercise-iota.vercel.app/"
                 links2="Gym Excerise"
               />
               <ProCard
@@ -245,7 +245,7 @@ const Profile = () => {
                 website which was fully mobile responsive and awsome
                     "
                 h="I also"
-                links="https://ugwucollins.github.io/Html-Css-and-JavaScrpit-projects/landening1/page.html"
+                links="https://exercise-iota.vercel.app/"
                 links2="Gym Excerise"
               />
               <ProCard
