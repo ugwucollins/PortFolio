@@ -10,3 +10,10 @@
   position: relative;
   overflow-x: hidden;
 }
+
+@media (max-width: 200px) {
+  .Profile {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

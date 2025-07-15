@@ -87,7 +87,7 @@ const Skills = () => {
             </div>
             <div className="Skills-box-rating">
               <div className="line-p">
-                <p className="html-p">Mysql</p>
+                <p className="html-p">Appwrite</p>
                 <p className="html-p-p">75%</p>
               </div>
               <div className="lines5"></div>

@@ -10,10 +10,127 @@
   --Profiles-background: transparent;
 }
 
+/* projects */
+.projects {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  place-content: center;
+  min-height: 100vh;
+}
+.project-contain {
+  display: flex;
+  width: 100%;
+  row-gap: 40px;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-contain-box {
+  display: flex;
+  width: 100%;
+  position: relative;
+  max-width: 450px;
+  justify-content: center;
+  place-items: center;
+  background-color: white;
+  gap: 15px;
+  padding-top: 4%;
+  padding-left: 20px;
+  border-radius: 15px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  box-shadow: 1px 1px 3px lightgrey;
+  filter: drop-shadow(1px 1px 3px lightgrey);
+}
+.dark-mode .project-contain-box {
+  background-color: transparent;
+  outline: 1px solid lightgray;
+  box-shadow: 0.5px 0.5px 3px lightgrey;
+  filter: drop-shadow(0.5px 0.5px 3px lightgrey);
+}
+.project-contain-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  max-width: 500px;
+  height: 65vh;
+}
+.project-contain-img {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 40vh;
+}
+.project-img {
+  width: min(120vw, 410px);
+  height: min(35vh, 500px);
+  border-radius: 18px;
+}
+
+.project-contain-words {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+  padding: 8px 0px;
+  width: 100%;
+}
+.project-contain-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.project-contain-icons {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* align-content: center; */
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 5px 0px;
+}
+.project-btn {
+  padding: 15px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  text-transform: capitalize;
+  margin: 5px 0px;
+  p {
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  p:hover {
+    font-weight: 800;
+  }
+}
+.projects-btnc {
+  display: flex;
+  column-gap: 10px;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+}
+
 /* Profile */
 .Profiles {
   margin-top: 10px;
   min-height: 100vh;
+  margin-bottom: 10px;
   background-color: var(--Profiles-background);
 }
 .Profiles .head-h1 {
@@ -28,13 +145,7 @@
   justify-content: center;
   text-align: center;
 }
-.Profiles .Profiles-btn {
-  display: flex;
-  column-gap: 10px;
-  justify-content: center;
-  text-align: center;
-  margin: 50px 0px 30px 0px;
-}
+
 .Profiles-btn .all-btn {
   position: relative;
   display: grid;
@@ -103,9 +214,6 @@
 .dark-mode .Onactive-p {
   padding: 10.5px 20px;
   font-size: 15px;
-  /* color: white;
-  background:linear-gradient(#f75d59,#f75e597c,rgba(128, 0, 128, 0.326),purple);
-  background-color: purple; */
   background: none;
   color: deepskyblue;
   font-weight: 550;
@@ -115,9 +223,6 @@
   border-bottom: none;
   box-shadow: 1px 2px 5px gray;
 }
-/* .next {
-  display: none;
-} */
 
 /* all-works */
 .Profiles-display .html {

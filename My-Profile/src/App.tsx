@@ -31,25 +31,24 @@ function App() {
     },
     {
       id: 5,
-      title: "Profile",
+      title: "Projects",
     },
     {
       id: 6,
       title: "Contact",
     },
   ];
- 
-  const form = useRef('');
 
+  const form = useRef("");
 
-  const sendEmail = (e:any) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        'service_gjs48dc',
-        'template_0130fgk',
+        "service_gjs48dc",
+        "template_0130fgk",
         form.current,
-        'onBgeaCnBkO6NiHur'
+        "onBgeaCnBkO6NiHur"
       )
       .then(
         (result) => {

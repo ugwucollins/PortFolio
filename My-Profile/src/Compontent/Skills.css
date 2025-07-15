@@ -330,6 +330,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   justify-content: space-between;
+  align-items: center;
   column-gap: 30px;
   margin: 20px 0px 0px 30px;
   min-height: 50vh;
@@ -338,6 +339,7 @@
   border: none;
   border-radius: 10px;
 }
+
 .dark-mode .Skills-box-circle {
   box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.171);
   background: none;
@@ -744,8 +746,15 @@
   }
 }
 /* For smaller Devices */
+
 @media (max-width: 820px) {
   .Skills-box {
     grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
+  }
+}
+@media (max-width: 500px) {
+  .Skills-box-circle {
+    justify-content: center;
+    column-gap: 20px;
   }
 }
