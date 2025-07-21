@@ -244,7 +244,7 @@ export const ProjectsArray: PROJECT[] = [
     imageUrl: "cloned_ai.png",
     description:
       "I used Next.Js in creating a user interFace and interactive website by creating the Cloned Ai that was fully responsive and interactive. and a well auth system using Next Auth. and also used Tailwind css in creating a responsive website. with the use of TypeScript. and mongodb for the database.",
-    path: "https://next01-ivory.vercel.app/",
+    path: "https://cloned-ai-five.vercel.app/",
     icons: [
       "html.png",
       "css.png",
@@ -254,9 +254,27 @@ export const ProjectsArray: PROJECT[] = [
       "nextic.png",
     ],
   },
-
   {
     id: 13,
+    title: "Blog Post",
+    categroy: "react next",
+    imageUrl: "blog.png",
+
+    description:
+      "A blog post written in MDX (Markdown + JSX) format. It compares and describes JavaScript and TypeScript in a clear and developer-focused way, making it suitable for a tech blog With the help of Next.js, Tailwind CSS, and MDX, you can create a fully-featured blog with a sleek design and a modern user experience. The blog post is a good example of how to use these technologies together to create a professional-looking website.",
+
+    path: "https://blog-post-omega-five.vercel.app/",
+    icons: [
+      "html.png",
+      "css.png",
+      "tailwind.png",
+      "javascript.png",
+      "react.png",
+      "next.png",
+    ],
+  },
+  {
+    id: 14,
     title: "Animal Image Slider",
     categroy: "css react",
     imageUrl: "image slider.png",
@@ -273,13 +291,13 @@ export const ProjectsArray: PROJECT[] = [
   },
   // react blog post with mern stack
   {
-    id: 14,
+    id: 15,
     title: "Blog Post",
     categroy: "javascript react",
     imageUrl: "blogzone.png",
     description:
       "My blog post is a react app that allows user to see the latest blog posts and news and also allows the user to create a new blog post. as a blogger i have used react, node.js,express tailwind css, and mongodb for the database. it is  a fullstack app with user authentication and authorization. and also used typescript for the project. with admin dashboard, bloggers post, news, and user authentication and page.",
-    path: "https://blog-post-omega-five.vercel.app/",
+    path: "https://blog-zone-beta.vercel.app/",
     icons: [
       "html.png",
       "css.png",
