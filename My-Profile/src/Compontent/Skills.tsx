@@ -22,22 +22,14 @@ const Skills = () => {
             <div className="Skills-box-rating">
               <div className="line-p">
                 <p className="html-p">CSS</p>
-                <p className="html-p-p">80%</p>
+                <p className="html-p-p">90%</p>
               </div>
-              <div className="lines2"></div>
+              <div className="lines"></div>
             </div>
 
             <div className="Skills-box-rating">
               <div className="line-p">
                 <p className="html-p">Scss/Sass</p>
-                <p className="html-p-p">77%</p>
-              </div>
-              <div className="lines3"></div>
-            </div>
-
-            <div className="Skills-box-rating">
-              <div className="line-p">
-                <p className="html-p">TailWind CSS</p>
                 <p className="html-p-p">85%</p>
               </div>
               <div className="lines4"></div>
@@ -45,25 +37,33 @@ const Skills = () => {
 
             <div className="Skills-box-rating">
               <div className="line-p">
-                <p className="html-p">Java Script</p>
-                <p className="html-p-p">75%</p>
+                <p className="html-p">TailWind CSS</p>
+                <p className="html-p-p">90%</p>
               </div>
-              <div className="lines5"></div>
+              <div className="lines"></div>
+            </div>
+
+            <div className="Skills-box-rating">
+              <div className="line-p">
+                <p className="html-p">Java Script</p>
+                <p className="html-p-p">80%</p>
+              </div>
+              <div className="lines6"></div>
             </div>
 
             <div className="Skills-box-rating">
               <div className="line-p">
                 <p className="html-p">React JS</p>
-                <p className="html-p-p">80%</p>
+                <p className="html-p-p">85%</p>
               </div>
-              <div className="lines6"></div>
+              <div className="lines4"></div>
             </div>
             <div className="Skills-box-rating">
               <div className="line-p">
                 <p className="html-p">Next JS</p>
-                <p className="html-p-p">75%</p>
+                <p className="html-p-p">80%</p>
               </div>
-              <div className="lines5"></div>
+              <div className="lines6"></div>
             </div>
             <div className="Skills-box-rating">
               <div className="line-p">
@@ -128,8 +128,8 @@ const Skills = () => {
           <div className="Skills-box-circle">
             <div className="Skills-box-rating-circle">
               <p className="html-p2">Team work</p>
-              <p className="html-p-p2">70%</p>
-              <div className="lines-circle3"></div>
+              <p className="html-p-p2">80%</p>
+              <div className="lines-circle6"></div>
             </div>
 
             <div className="Skills-box-rating-circle">
@@ -140,14 +140,14 @@ const Skills = () => {
 
             <div className="Skills-box-rating-circle">
               <p className="html-p2">Co-operation</p>
-              <p className="html-p-p2">80%</p>
-              <div className="lines-circle6"></div>
+              <p className="html-p-p2">85%</p>
+              <div className="lines-circle5C"></div>
             </div>
 
             <div className="Skills-box-rating-circle">
               <p className="html-p2">Comunication</p>
-              <p className="html-p-p2">75%</p>
-              <div className="lines-circle2"></div>
+              <p className="html-p-p2">90%</p>
+              <div className="lines-circle"></div>
             </div>
           </div>
         </div>
