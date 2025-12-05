@@ -113,6 +113,17 @@ export type PROJECT = {
 
 export const ProjectsArray: PROJECT[] = [
   {
+    id: 16,
+    title: "Nelly-J Catering Services Website",
+    categroy: "javascript react",
+    imageUrl: "nellyj.png",
+    description:
+      "I designed and developed a fully responsive and visually appealing website for Nelly-J Catering Services using Node.js, express,mongodb and React (MERN). The goal of the project was to create a modern and user-friendly platform that showcases the catering brand’s offerings in a clear, elegant, and structured way. The website features a smooth navigation system, organized service sections, and optimized images that ensure fast load times across all devices. I implemented a clean UI layout, accessible components, and mobile-first styling to improve user experience and make the website easy to browse on smartphones, tablets, and desktops. The overall design highlights the brand’s identity with consistent color choices, well-structured content, and intuitive call-to-action elements, giving visitors a seamless and engaging browsing experience.",
+    path: "https://nelly-j.vercel.app",
+    icons: ["react.png", "css.png", "tailwind.png", "javascript.png"],
+  },
+
+  {
     id: 1,
     title: "First Landing Page",
     categroy: "html",

@@ -70,7 +70,7 @@
 .project-img {
   width: min(120vw, 410px);
   height: min(35vh, 500px);
-  border-radius: 18px;
+  border-radius: 20px;
 }
 
 .project-contain-words {
